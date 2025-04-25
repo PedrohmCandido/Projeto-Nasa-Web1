@@ -1,0 +1,37 @@
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.api-container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.second-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-image-container p {
+    max-width: 90ch; /* controla a largura baseada em caracteres */
+    margin-left: auto;  /* centraliza o texto horizontalmente */
+    padding: 1rem;   /* espaço interno */
+    line-height: 1.6; /* espaçamento entre linhas */
+    text-align: left; /* ou justify se quiser texto justificado */
+    font-size: 1rem;
+  }
+
+.dayImage{
+    width: 50vw;
+    height: 50vh;
+    margin-right: auto;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}

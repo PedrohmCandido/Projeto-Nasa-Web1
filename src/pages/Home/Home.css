@@ -1,0 +1,23 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opcoes{
+    margin-top: 25px;
+  }
+
+li{
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 10px;
+    background-color: rgb(35, 55, 122);
+    color: white;
+    margin-top: 10px;
+}
+
+Link{
+    color: white;
+}

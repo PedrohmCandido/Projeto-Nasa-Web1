@@ -1,0 +1,17 @@
+.header-container{
+    width: 100%;
+    background-color: rgb(35, 55, 122);
+    padding: 30px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+}
+
+img {
+    width: 10vw;
+    height: 10vh;
+  }
+
+h1{
+    margin-top: 20px;
+}
