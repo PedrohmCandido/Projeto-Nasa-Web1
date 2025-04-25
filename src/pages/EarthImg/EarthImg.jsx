@@ -10,12 +10,12 @@ export default function EarthImg() {
   useEffect(() => {
     const currentMount = mountRef.current;
 
-    // Cena e background
+  
     const scene = new THREE.Scene();
     const backgroundTexture = new THREE.TextureLoader().load(spaceBackground);
     scene.background = backgroundTexture;
 
-    // Câmera
+    
     const camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
@@ -24,20 +24,20 @@ export default function EarthImg() {
     );
     camera.position.set(0, 0, 5);
 
-    // Renderer com sombras habilitadas
+   
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     currentMount.appendChild(renderer.domElement);
 
-    // Controles de órbita: zoom e pan apenas
+ 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
-    controls.enableRotate = false; // desabilita rotação da câmera via controles
+    controls.enableRotate = false;
 
-    // Luz direcional simulando o Sol
+  
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     directionalLight.position.set(10, 10, 10);
     directionalLight.castShadow = true;
@@ -47,7 +47,7 @@ export default function EarthImg() {
     directionalLight.shadow.camera.far = 50;
     scene.add(directionalLight);
 
-    // Terra (esfera) com material responsivo à luz
+   
     const earthTexture = new THREE.TextureLoader().load(textureEarth);
     const earthMaterial = new THREE.MeshStandardMaterial({ map: earthTexture });
     const earthGeometry = new THREE.SphereGeometry(2, 64, 64);
@@ -56,7 +56,7 @@ export default function EarthImg() {
     earthMesh.receiveShadow = true;
     scene.add(earthMesh);
 
-    // Controle manual de arraste para rotacionar a Terra
+  
     let isDragging = false;
     let previousMousePosition = { x: 0, y: 0 };
     const rotationSpeed = 0.005;
@@ -85,7 +85,6 @@ export default function EarthImg() {
     renderer.domElement.addEventListener('mousemove', onMouseMove);
     renderer.domElement.addEventListener('mouseup', onMouseUp);
 
-    // Ajuste no resize
     const onResize = () => {
       const { innerWidth, innerHeight } = window;
       renderer.setSize(innerWidth, innerHeight);
@@ -94,16 +93,16 @@ export default function EarthImg() {
     };
     window.addEventListener('resize', onResize);
 
-    // Loop de animação: mantém rotação automática se desejado
+
     const animate = () => {
       requestAnimationFrame(animate);
-      earthMesh.rotation.y += 0.001; // rotação automática
+      earthMesh.rotation.y += 0.001;
       controls.update();
       renderer.render(scene, camera);
     };
     animate();
 
-    // Cleanup
+
     return () => {
       renderer.domElement.removeEventListener('mousedown', onMouseDown);
       renderer.domElement.removeEventListener('mousemove', onMouseMove);
