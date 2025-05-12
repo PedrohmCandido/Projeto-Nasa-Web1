@@ -1,4 +1,4 @@
-# 🚀 NASA Image Viewer
+# 🚀 NASA Library
 
 Este projeto é uma aplicação web desenvolvida com **React** que consome a API pública da NASA para exibir imagens incríveis do espaço. Ele conta com uma estrutura organizada por páginas e componentes reutilizáveis, proporcionando uma experiência de navegação fluida e visualmente agradável.
 
