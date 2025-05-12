@@ -6,6 +6,6 @@ export default function Header() {
     return <div className='header-container'>
         <img src={nasaLogo} alt="" />
         <h1>YOUR NASA LIBRARY</h1>
-        <Link to='/' style={{ textDecoration: "none", color: "inherit" , marginLeft: "auto", marginTop: 25, fontSize: 25}}>HOME</Link>
+        <Link to='/' style={{ textDecoration: "none", color: "inherit" , marginLeft: "auto", marginTop: 17, fontSize: 25}}>HOME</Link>
     </div>
 }

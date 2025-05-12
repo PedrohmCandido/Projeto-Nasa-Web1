@@ -1,15 +1,21 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import './Home.css'
-import image from '../../assets/site-logo.png'
+import image from '../../assets/earth-icon-2.png'
+import image2 from '../../assets/apod-icon3.png'
 
 export default function Home() {
+    const navigate = useNavigate();
     return <div className="titulo">
-        <h1>WELCOME TO OUR HOME</h1>
-        <img src={image} alt="site-logo" style={{height: 150, width: 200}}/>
-        <h2>What do you want to see today?</h2>
-        <ul className="opcoes">
-            <li><Link to='/photo' style={{textDecoration: "none", color: "inherit", display: "flex", alignItems: "center", justifyContent: "center"}}>Photo of the day</Link></li>
-            <li><Link to='/earth' style={{textDecoration: "none", color: "inherit", display: "flex", alignItems: "center", justifyContent: "center"}}>Earth 3D Model</Link></li>
-        </ul>
+        <h1>LEARN MORE ABOUT THE SPACE DAY BY DAY</h1>
+        <div className="opcoes">
+            <button onClick={() => navigate('/photo')}>
+                <h3>Earth Photo of the Day</h3>
+                <img src={image2} alt="image of the day icon" />
+            </button>
+            <button onClick={() => navigate('/earth')}>
+                <h3>Earth 3D Model</h3>
+                <img src={image} alt="earth image" />
+            </button>
+        </div>
     </div>
 }

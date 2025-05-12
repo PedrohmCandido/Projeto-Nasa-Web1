@@ -21,17 +21,22 @@
 
 .second-image-container p {
     max-width: 90ch; /* controla a largura baseada em caracteres */
-    margin-left: auto;  /* centraliza o texto horizontalmente */
+    margin-left: 20px;
+    margin-right: 20px;  /* centraliza o texto horizontalmente */
     padding: 1rem;   /* espaço interno */
     line-height: 1.6; /* espaçamento entre linhas */
     text-align: left; /* ou justify se quiser texto justificado */
     font-size: 1rem;
+    background-color: rgb(183, 183, 183);
+    border: 2px solid rgb(97, 97, 97);
+    border-radius: 8px;
   }
 
 .dayImage{
     width: 50vw;
     height: 50vh;
     margin-right: auto;
+    margin-left: 20px;
     border-radius: 16px;
     margin-bottom: 20px;
 }

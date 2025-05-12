@@ -25,10 +25,10 @@ export default function DayImg() {
 
   return (
     <div className="image-container">
-      <h1>Image of the Day!</h1>
+      <h1>IMAGE OF THE DAY!</h1>
       {image ? (
         <div className="api-container">
-        <h1>Title: {image.title}</h1>
+        <h1>{image.title}</h1>
           <div className="second-image-container">
             <img className="dayImage" src={image.url} />
             <p>{image.explanation}</p>
