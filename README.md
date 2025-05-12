@@ -66,21 +66,18 @@ Página inicial que permite a navegação para as demais seções:
 - Imagem do Dia (DayImg)
 - Imagem da Terra (EarthImg)
 
-  ![image](https://github.com/user-attachments/assets/b7420f67-5cb3-4de5-8f70-f34d0be93507)
+![image](https://github.com/user-attachments/assets/225d4d19-6b45-4a5a-b393-8241b250acfa)
 
 
 ### 🌞 DayImg
 Realiza uma **requisição à API pública da NASA** para buscar e exibir a *imagem astronômica do dia* (Astronomy Picture of the Day - APOD), junto de sua descrição.
 
-![image](https://github.com/user-attachments/assets/a53c6391-53d4-43cb-9deb-a646462e83b2)
-
+![image](https://github.com/user-attachments/assets/efb85c19-db38-4f0f-9a0a-5a4d01feb21d)
 
 ### 🌍 EarthImg
 Renderiza uma **imagem 3D interativa da Terra** utilizando a biblioteca **Three.js**, proporcionando uma visualização dinâmica do nosso planeta.
 
-![image](https://github.com/user-attachments/assets/e0ecce21-4f6b-4ddf-8460-db9de1db4936)
-
-
+![image](https://github.com/user-attachments/assets/e0eb5e4d-6ada-4c3e-99e2-4ee10fca4501)
 
 ---
 
