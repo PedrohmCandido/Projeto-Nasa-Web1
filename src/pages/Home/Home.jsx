@@ -13,7 +13,7 @@ export default function Home() {
                 <img src={image2} alt="image of the day icon" />
             </button>
             <button onClick={() => navigate('/earth')}>
-                <h3>EARTH 3D MODEL</h3>
+                <h3>EARTH PLANET 3D MODEL</h3>
                 <img src={image} alt="earth image" />
             </button>
         </div>
