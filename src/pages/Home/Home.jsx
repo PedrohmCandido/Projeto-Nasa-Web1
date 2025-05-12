@@ -9,11 +9,11 @@ export default function Home() {
         <h1>LEARN MORE ABOUT THE SPACE DAY BY DAY</h1>
         <div className="opcoes">
             <button onClick={() => navigate('/photo')}>
-                <h3>Earth Photo of the Day</h3>
+                <h3>ASTRONOMY PICTURE OF THE DAY</h3>
                 <img src={image2} alt="image of the day icon" />
             </button>
             <button onClick={() => navigate('/earth')}>
-                <h3>Earth 3D Model</h3>
+                <h3>EARTH 3D MODEL</h3>
                 <img src={image} alt="earth image" />
             </button>
         </div>
